@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base application theme. -->
+    <!--谨慎使用该Theme-->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:label">""</item>
+        <item name="android:screenOrientation">portrait</item>
+    </style>
+
+    <!--能够滑动回退的Activity使用该Theme-->
+    <style name="ThemeSwipeBack" parent="AppTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <!--不能滑动回退的Activity使用该Theme-->
+    <style name="ThemeNoSwipeBack" parent="AppTheme">
+        <!--该属性设置true，使用该theme的activity，点击后台任务按键会出现视图重影-->
+        <item name="android:windowIsTranslucent">false</item>
+        <!--由于上一个属性为true，该属性如果设置透明，则window背景黑乎乎一片-->
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <!--不能滑动回退的Activity使用该Theme-->
+    <style name="ThemeNoSwipeBackAndStatusBarWhite" parent="AppTheme">
+        <!--该属性设置true，使用该theme的activity，点击后台任务按键会出现视图重影-->
+        <item name="android:windowIsTranslucent">false</item>
+        <!--由于上一个属性为true，该属性如果设置透明，则window背景黑乎乎一片-->
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">#ffffff</item>
+        <item name="colorPrimaryDark">#ccffffff</item>
+        <item name="colorAccent">#87cefa</item>
+    </style>
+
+
+    <!--main activity 指定Theme-->
+    <style name="ThemeMain" parent="AppTheme">
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowBackground">@drawable/shape_gradient_deep</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="MyToolbarTheme" parent="Base.V7.Widget.AppCompat.Toolbar">
+        <item name="titleMargin">0dp</item>
+    </style>
+
+    <!--窗口淡入淡出动画-->
+    <style name="Animation.Popup" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+    <style name="MyEditText" parent="Base.V7.Widget.AppCompat.EditText">
+        <item name="android:colorControlNormal">#666666</item>
+        <item name="android:colorControlActivated">#ffc400</item>
+    </style>
+
+
+    <!--*********************以下是alert相关********************************-->
+    <style name="AlertTheme" parent="Base.Theme.AppCompat">
+        <item name="alertStyle">@style/AlertStyle</item>
+    </style>
+
+    <!--Alerter-->
+    <style name="AlertStyle" parent="@android:style/Widget">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">@dimen/alerter_alert_min_height</item>
+        <item name="android:maxHeight">@dimen/alerter_alert_max_height</item>
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">top</item>
+        <item name="android:paddingTop">@dimen/alerter_alert_padding</item>
+    </style>
+
+    <style name="AlertTextAppearance">
+        <item name="android:textColor">@color/alert_default_text_color</item>
+    </style>
+
+    <style name="AlertTextAppearance.Title">
+        <item name="android:textSize">@dimen/alerter_text_medium</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="AlertTextAppearance.Text">
+        <item name="android:textSize">@dimen/alerter_text_small</item>
+    </style>
+
+    <!--*********************以上是alert相关********************************-->
+    <style name="CustomDialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    </style>
+
+    <style name="Text_16sp_2b2d2e">
+        <item name="android:textSize">@dimen/textsize_16sp</item>
+        <item name="android:textColor">@color/color_2b2d2e</item>
+    </style>
+
+    <style name="Text_16sp_f5a623">
+        <item name="android:textSize">@dimen/textsize_16sp</item>
+        <item name="android:textColor">@color/color_f5a623</item>
+    </style>
+
+    <style name="Text_16sp_a3a5a6">
+        <item name="android:textSize">@dimen/textsize_16sp</item>
+        <item name="android:textColor">@color/color_a3a5a6</item>
+    </style>
+    <style name="line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">@color/color_eeeeee</item>
+    </style>
+
+    <style name="Text_13sp_2b2d2e">
+        <item name="android:textSize">@dimen/textsize_13sp</item>
+        <item name="android:textColor">@color/color_2b2d2e</item>
+    </style>
+</resources>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_exit">再按一次退出App名称</string>
+    <string name="app_run_into_background">App名称进入后台运行</string>
+
+    <!--*********************以下是alert相关********************************-->
+    <string name="msg.alert_cleared">Alert Cleared</string>
+    <string name="msg.no_alert_showing">No Alert Showing</string>
+    <!--*********************以上是alert相关********************************-->
+    <!--===================================权限相关============================-->
+    <string name="permission_rational_message">允许以下权限以便程序继续执行：\n\n%1$s</string>
+    <string name="permission_rational_title">提示</string>
+    <string name="permission_resume">继续</string>
+    <string name="permission_cancle">取消</string>
+    <string name="integral_transfer_out_verify">积分转入验证</string>
+    <string name="tip_send_verification_code">验证码已发送至{@phone}手机上，请查收！</string>
+    <string name="action_ok">确定</string>
+    <string name="action_resend">重新发送</string>
+
+    <string name="exception_tip_illegal_argument">缺少传递相应参数</string>
+    <string name="cancle">取消</string>
+    <string name="user_nickname_setting">设置昵称</string>
+    <string name="tip_user_nickname_modify_once">昵称不可修改，请谨慎设置哦～</string>
+    <string name="cancel">取消</string>
+    <string name="matisse_selectphoto">从相册中选择</string>
+    <string name="matisse_takephoto">拍照</string>
+
+    <string name="wifi_connected">WIFI已连接</string>
+    <string name="mobile_data_connected">移动数据已连接</string>
+    <string name="no_network">网络连接已断开</string>
+
+    <string name="let_me_think">我再想想</string>
+    <string name="request_failed_press_to_retry">数据获取失败，请点击重试</string>
+
+    <string name="nonerecord">暂无记录</string>
+
+</resources>

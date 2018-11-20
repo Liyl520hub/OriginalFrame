@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">appName</string>
+    <string name="main_rb_main">首页</string>
+    <string name="main_rb_message">消息</string>
+    <string name="main_rb_community">社区</string>
+
+
+    <!--===================================错误提示============================-->
+    <string name="exception_tip_illegal_argument">缺少传递相应参数</string>
+    <string name="tip_input_null">请填写完整信息</string>
+    <string name="tip_exception_system_error">系统异常</string>
+    <string name="tip_common_error">错误提示</string>
+    <string name="tip_common_permission">权限提示</string>
+    <string name="tip_common_permission_need">需要以下权限</string>
+    <string name="tip_aws_upload_failed">图片上传失败，请重新上传</string>
+    <string name="unable_to_open_camera">不能打开相机</string>
+    <string name="error">发生了一些错误</string>
+    <string name="no_network_tip">当前无网络，请检查网络</string>
+    <string name="no_network_tip_login">网络请求失败，请检查网络</string>
+    <!--===================================公用部分============================-->
+    <string name="tip">提示</string>
+    <string name="i_see">我知道了</string>
+    <string name="let_me_think">我再想想</string>
+    <string name="quit">退出</string>
+    <string name="state_failed">失败</string>
+    <string name="state_success">成功</string>
+    <string name="confirm">确定</string>
+    <!--动作-->
+    <string name="abandon">放弃</string>
+    <string name="immediately_set">立即设置</string>
+    <string name="action_success">成功</string>
+    <string name="action_failed">失败</string>
+    <string name="action_set_up">设置</string>
+    <string name="action_ok">确定</string>
+    <string name="action_set_up_please">请设置</string>
+    <string name="action_open">展开</string>
+    <string name="action_log_out">退出登录</string>
+    <string name="action_close">收起</string>
+    <string name="action_all">全部</string>
+    <string name="action_scan_qr">扫码</string>
+    <string name="action_collect">收藏</string>
+    <string name="action_cancel">取消</string>
+    <string name="action_perform">确定</string>
+    <string name="action_done">完成</string>
+    <string name="action_copy_address">复制地址</string>
+    <string name="action_copy_address_by_one_key">一键复制地址</string>
+    <string name="action_modify">修改</string>
+    <string name="action_modify_go">去修改</string>
+    <string name="action_set_up_go">去设置</string>
+    <string name="action_send">发送</string>
+    <string name="action_resend">重新发送</string>
+    <string name="action_resend_2">重发</string>
+    <string name="action_back">返回</string>
+    <string name="action_back_now">即刻返回</string>
+    <string name="action_submit_confirm">确定提交</string>
+    <string name="action_submit">提交</string>
+    <string name="action_get_sms_code">获取验证码</string>
+    <string name="action_select_please">请选择</string>
+    <!--===================================App更新============================-->
+    <string name="app_download_dialog_tittle">版本升级</string>
+    <string name="app_download_dialog_tip">正在下载安装包，请稍候...</string>
+    <string name="app_download_retry">数据获取失败，请重试</string>
+    <string name="retry">重试</string>
+
+
+</resources>

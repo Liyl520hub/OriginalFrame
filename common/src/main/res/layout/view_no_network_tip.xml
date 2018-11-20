@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/y10"
+    android:paddingBottom="@dimen/y10"
+    android:background="@color/colorAccent"
+    android:gravity="center"
+    android:text="啊哦！没有网络连接哦！！"
+    android:textSize="16sp"
+    android:textColor="#000000">
+
+</TextView>

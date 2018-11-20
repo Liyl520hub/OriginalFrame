@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/default_toolbar"
+    style="@style/MyToolbarTheme"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/toolBarHeight"
+    android:background="#ffffff"
+    android:fitsSystemWindows="false"
+    android:minHeight="@dimen/toolBarHeight"
+    app:contentInsetLeft="0dp"
+    app:contentInsetStart="0dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolBarHeight">
+        <!--基类封装的默认Toolbar，不要设置整体背景色，SwipeBackActivity中给toolbar容器设置了背景色，就是toolbar的背景色-->
+        <ImageView
+            android:id="@+id/default_toolbar_left_image"
+            android:layout_width="@dimen/toolBarHeight"
+            android:layout_height="@dimen/toolBarHeight"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:padding="11dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_back" />
+
+        <LinearLayout
+            android:id="@+id/default_toolbar_container"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolBarHeight"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom"
+            android:background="#f4f4f4" />
+    </FrameLayout>
+</android.support.v7.widget.Toolbar>

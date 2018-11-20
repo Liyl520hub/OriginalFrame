@@ -1,0 +1,114 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion project.VERSION_COMPILE_SDK as int
+    buildToolsVersion project.VERSION_BUILD_TOOLS
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    buildToolsVersion project.VERSION_BUILD_TOOLS
+    defaultConfig {
+        minSdkVersion project.VERSION_MIN_SDK as int
+        targetSdkVersion project.VERSION_TARGET_SDK as int
+        versionCode 1
+        versionName "1.0"
+        flavorDimensions project.VERSION_NAME
+        buildConfigField('boolean', 'IS_MODULE', isModule.toString())
+        ndk {
+            //设置支持的SO库架构（开发者可以根据需要，选择一个或多个平台的so）
+            abiFilters "armeabi", "armeabi-v7a", "arm64-v8a", "x86", "arm64-v8a", "x86_64"
+        }
+        buildConfigField('String', 'SYSFROM', project.SYSFROM)
+        buildConfigField('String', 'PLATFORM', project.PLATFORM)
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            zipAlignEnabled true
+            // 移除无用的resource文件
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+            minifyEnabled false
+            zipAlignEnabled false
+            // 移除无用的resource文件
+            shrinkResources false
+        }
+    }
+    productFlavors {
+        Test {
+            buildConfigField('boolean', 'IS_DEBUG', 'true')
+            buildConfigField('String', 'HOST_SERVER', "\"" + HOST_SERVER_TEST.toString() + "\"")
+        }
+        Production {
+            buildConfigField('boolean', 'IS_DEBUG', 'false')
+            buildConfigField('String', 'HOST_SERVER', "\"" + HOST_SERVER_TEST.toString() + "\"");
+        }
+    }
+}
+
+
+
+dependencies {
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    api 'com.android.support:support-v4:27.+'
+    api 'com.android.support:support-annotations:27.+'
+    api 'com.android.support:design:27.+'
+    api 'com.android.support:appcompat-v7:27.+'
+    //retrofit
+    api 'com.squareup.retrofit2:retrofit:2.3.0'
+    api 'com.squareup.retrofit2:converter-gson:2.3.0'
+    api 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
+    //okhttp3
+    api 'com.squareup.okhttp3:okhttp:3.9.1'
+    api 'com.squareup.okhttp3:logging-interceptor:3.9.1'
+    //Rxjava
+    api 'io.reactivex.rxjava2:rxjava:2.1.8'
+    api 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    //gson
+    api 'com.google.code.gson:gson:2.8.2'
+    //ButterKnife
+    api 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    //Glide
+    api 'com.github.bumptech.glide:glide:4.7.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.7.1'
+    //分包
+    api 'com.android.support:multidex:1.0.3'
+    api 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.34'
+    api 'top.zibin:Luban:1.1.3'
+    api 'com.yanzhenjie:permission:2.0.0-rc12'
+    //    api 'com.klinkerapps:link_builder:1.6.1'
+    api 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.3'
+    api 'com.scwang.smartrefresh:SmartRefreshHeader:1.0.3'
+    //没有使用特殊Header，可以不加这行
+    api 'com.daimajia.swipelayout:library:1.2.0'
+    api 'com.blankj:utilcode:1.13.10'
+    //RxBinding
+    api 'com.jakewharton.rxbinding2:rxbinding:2.0.0'
+    api 'com.jakewharton.rxbinding2:rxbinding-support-v4:2.0.0'
+    api 'com.jakewharton.rxbinding2:rxbinding-appcompat-v7:2.0.0'
+    api 'com.jakewharton.rxbinding2:rxbinding-design:2.0.0'
+    api 'com.jakewharton.rxbinding2:rxbinding-recyclerview-v7:2.0.0'
+    api 'javax.inject:javax.inject:1'
+    api 'com.amap.api:3dmap:5.4.0'
+    api 'com.amap.api:location:latest.integration'
+    api 'com.amap.api:search:latest.integration'
+    api 'zlc.season:rxdownload2:2.0.4'
+    //友盟基础组件库
+    api 'com.umeng.sdk:common:1.5.0'
+    //友盟统计
+    api 'com.umeng.sdk:analytics:7.5.0'
+    api 'com.wang.avi:library:2.1.3'
+    api 'me.grantland:autofittextview:0.2.+'
+    //轮播
+    api 'com.android.support:support-v4:2.2.5'
+    api 'cn.bingoogolapple:bga-banner:2.2.5@aar'
+
+}
+
+

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#ffc400</color>
+    <color name="colorPrimaryDark">#ffc400</color>
+    <color name="colorAccent">#ffc400</color>
+
+    <!--SwipeLayout的BottomView的背景色-->
+    <color name="colorSwipeLayoutShadow">#99000000</color>
+
+
+    <color name="color_98dcff">#98dcff</color>
+    <color name="color_8cc4ff">#8cc4ff</color>
+    <color name="color_1989ff">#1989ff</color>
+    <color name="color_31b9ff">#31b9ff</color>
+    <color name="color_ffc400">#ffc400</color>
+    <color name="color_2b2d2e">#2b2d2e</color>
+
+    <color name="color_ffaOOf">#f5a623</color>
+
+    <!--*********************以下是alert相关********************************-->
+    <color name="alerter_default_success_background">#4CAF50</color>
+    <color name="alert_default_error_background">#F44336</color>
+    <color name="alert_default_text_color">@android:color/white</color>
+    <color name="alert_default_icon_color">@android:color/white</color>
+    <color name="white">#FFFFFF</color>
+    <!--*********************以上是alert相关********************************-->
+
+
+    <color name="color_f4f4f4">#f4f4f4</color>
+    <color name="color_f5a623">#f5a623</color>
+    <color name="color_white">#ffffff</color><!--白色 -->
+    <color name="color_white_transparent">#f3ffffff</color><!--白色 -->
+    <color name="pin_normal">#6B767E</color>
+    <color name="color_ffffff">#ffffff</color>
+    <color name="color_000000">#000000</color>
+    <color name="color_e4e4e4">#e4e4e4</color>
+    <color name="color_c9c9c9">#c9c9c9</color>
+    <color name="color_a3a5a6">#a3a5a6</color>
+    <color name="color_464646">#464646</color>
+    <color name="color_eeeeee">#eeeeee</color>
+    <!--*********************以上是alert相关********************************-->
+    <color name="color_e5b000">#e5b000</color>
+</resources>

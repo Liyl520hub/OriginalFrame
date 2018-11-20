@@ -1,0 +1,36 @@
+<resources>
+
+    <dimen name="toolBarHeight">42dp</dimen>
+
+
+    <!--*********************以下是alert相关********************************-->
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="alerter_activity_horizontal_margin">18dp</dimen>
+    <dimen name="alerter_activity_vertical_margin">16dp</dimen>
+    <dimen name="seller_uploadphoto_spacing">10dp</dimen>
+    <dimen name="takeptosletpto">165dp</dimen>
+    <dimen name="grid_expected_size">120dp</dimen>
+    <dimen name="line_height">1dp</dimen>
+    <dimen name="alerter_padding_small">4dp</dimen>
+    <dimen name="alerter_padding_half">8dp</dimen>
+    <dimen name="alerter_padding_default">16dp</dimen>
+    <dimen name="alerter_alert_padding">30dp</dimen>
+    <dimen name="alerter_alert_negative_margin_top">-26dp</dimen>
+
+    <dimen name="alerter_progress_bar_size">2dp</dimen>
+
+    <!--Alerts-->
+    <dimen name="alerter_alert_min_height">64dp</dimen>
+    <dimen name="alerter_alert_max_height">84dp</dimen>
+    <dimen name="alerter_alert_icn_size">22dp</dimen>
+
+    <!--Text sizes-->
+    <dimen name="alerter_text_small">14sp</dimen>
+    <dimen name="alerter_text_medium">18sp</dimen>
+    <!--*********************以上是alert相关********************************-->
+    <dimen name="textsize_13sp">13sp</dimen>
+    <dimen name="textsize_10sp">10sp</dimen>
+    <dimen name="textsize_8sp">8sp</dimen>
+    <dimen name="textsize_16sp">16sp</dimen>
+
+</resources>

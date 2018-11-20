@@ -1,0 +1,76 @@
+apply plugin: 'com.android.application'
+
+//生成(年月日时分)时间
+def generateTimeFull() {
+    Date date = new Date();
+    date.hours += 8;
+    return date.format("yyyy-MM-dd-HH-mm", TimeZone.getTimeZone("CCT"))
+}
+
+
+
+android {
+    compileSdkVersion project.VERSION_COMPILE_SDK as int
+    buildToolsVersion project.VERSION_BUILD_TOOLS
+    defaultConfig {
+        applicationId "com.yjj.coach.kaolakaola"
+        minSdkVersion project.VERSION_MIN_SDK as int
+        targetSdkVersion project.VERSION_TARGET_SDK as int
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        flavorDimensions project.VERSION_NAME
+        multiDexEnabled true
+
+        buildConfigField('int', 'READ_TIME_OUT', project.READ_TIME_OUT);
+        buildConfigField('int', 'CONNECT_TIME_OUT', project.CONNECT_TIME_OUT);
+    }
+    applicationVariants.all { variant ->
+        variant.outputs.all { output ->
+            outputFileName = "Android_v${defaultConfig.versionName}(${defaultConfig.versionCode})_${variant.productFlavors[0].name}_${generateTimeFull()}.apk"
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            zipAlignEnabled true
+            // 移除无用的resource文件
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+            minifyEnabled false
+            zipAlignEnabled false
+            // 移除无用的resource文件
+            shrinkResources false
+        }
+    }
+    productFlavors {
+        Test {
+            buildConfigField('boolean', 'IS_DEBUG', 'true')
+            buildConfigField('String', 'HOST_SERVER', "\"" + HOST_SERVER_TEST.toString() + "\"")
+        }
+        Production {
+            buildConfigField('boolean', 'IS_DEBUG', 'false')
+            buildConfigField('String', 'HOST_SERVER', "\"" + HOST_SERVER_TEST.toString() + "\"");
+        }
+    }
+}
+
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:27'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation project(path: ':common')
+    //ButterKnife
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    //第三方TabLayout
+    implementation 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'
+}

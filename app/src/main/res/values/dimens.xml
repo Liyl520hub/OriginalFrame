@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="grid_expected_size">120dp</dimen>
+    <dimen name="line_height">1dp</dimen>
+    <dimen name="def_margin">8dp</dimen>
+    <dimen name="def_item_height">54dp</dimen>
+    <dimen name="demin_1">1dp</dimen>
+    <dimen name="demin_2">2dp</dimen>
+    <dimen name="demin_3">3dp</dimen>
+    <dimen name="demin_4">4dp</dimen>
+    <dimen name="demin_7">7dp</dimen>
+    <dimen name="demin_6">6dp</dimen>
+    <dimen name="demin_8">8dp</dimen>
+    <dimen name="demin_14">14dp</dimen>
+    <dimen name="demin_16">16dp</dimen>
+    <dimen name="demin_20">20dp</dimen>
+    <dimen name="demin_24">24dp</dimen>
+    <dimen name="demin_30">30dp</dimen>
+    <dimen name="demin_32">32dp</dimen>
+    <dimen name="demin_44">44dp</dimen>
+    <dimen name="demin_48">48dp</dimen>
+    <dimen name="demin_108">108dp</dimen>
+    <dimen name="demin_120">120dp</dimen>
+    <dimen name="demin_170">170dp</dimen>
+
+    <dimen name="textsize_12sp">12sp</dimen>
+    <dimen name="textsize_13sp">13sp</dimen>
+    <dimen name="textsize_16sp">16sp</dimen>
+    <dimen name="textsize_18sp">18sp</dimen>
+    <dimen name="textsize_20sp">20sp</dimen>
+    <dimen name="textsize_22sp">22sp</dimen>
+    <dimen name="textsize_34sp">34sp</dimen>
+    <dimen name="pattern_lock_path_width">3dp</dimen>
+    <dimen name="pattern_lock_dot_size">10dp</dimen>
+    <dimen name="pattern_lock_dot_selected_size">24dp</dimen>
+    <dimen name="pattern_lock_point_width">40dp</dimen>
+
+    <dimen name="header_divider_height">2dp</dimen>
+    <dimen name="header_height">40dp</dimen>
+    <dimen name="common_padding_left">16dp</dimen>
+    <dimen name="header_textsize">16sp</dimen>
+
+
+</resources>

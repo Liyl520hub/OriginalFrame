@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/common_assets_detail">
+
+    <LinearLayout
+        android:layout_width="@dimen/x168"
+        android:layout_height="@dimen/y330"
+        android:layout_centerInParent="true"
+        android:background="@color/color_ffffff"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_all"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y100"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="全部"
+            android:textColor="@color/color_2b2d2e"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginRight="@dimen/x30"
+            android:background="@color/color_f4f4f4" />
+
+        <TextView
+            android:id="@+id/tv_income"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y100"
+            android:button="@null"
+            android:checked="false"
+            android:gravity="center"
+            android:text="收入"
+            android:textColor="@color/color_2b2d2e"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginRight="@dimen/x30"
+            android:background="@color/color_f4f4f4" />
+
+        <TextView
+            android:id="@+id/tv_outpay"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y100"
+            android:button="@null"
+            android:checked="false"
+            android:gravity="center"
+            android:text="支出"
+            android:textColor="@color/color_2b2d2e"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_f4f4f4" />
+    </LinearLayout>
+
+</RelativeLayout>

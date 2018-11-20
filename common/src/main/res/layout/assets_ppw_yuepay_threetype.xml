@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.4"
+        android:background="@color/color_000000"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/rg_group"
+        android:layout_width="@dimen/x160"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_round_corner_screen"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/x20"
+        android:paddingRight="@dimen/x20"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/rb_one"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y100"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="全部"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="6dp"
+            android:background="@color/color_eeeeee" />
+
+        <TextView
+            android:id="@+id/rb_twe"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y100"
+            android:button="@null"
+            android:checked="false"
+            android:gravity="center"
+            android:text="收入"
+            android:textSize="15sp"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="6dp"
+            android:background="@color/color_eeeeee" />
+
+        <TextView
+            android:id="@+id/rb_three"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y100"
+            android:button="@null"
+            android:checked="false"
+            android:gravity="center"
+            android:text="支出"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+
+</FrameLayout>

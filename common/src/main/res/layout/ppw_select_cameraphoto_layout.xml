@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f4f4f4">
+
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y110"
+        android:background="@color/color_ffffff"
+        android:textSize="18sp"
+        android:textColor="@color/color_464646"
+        android:gravity="center"
+        android:text="@string/cancel"/>
+
+    <TextView
+        android:id="@+id/tv_selectphoto"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y110"
+        android:textColor="@color/color_464646"
+        android:gravity="center"
+        android:text="@string/matisse_selectphoto"
+        android:textSize="18sp"
+        android:background="@color/color_ffffff"
+        android:layout_above="@+id/tv_cancel"
+        android:layout_marginBottom="@dimen/y20"/>
+
+    <TextView
+        android:id="@+id/tv_takephoto"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y110"
+        android:textColor="@color/color_464646"
+        android:gravity="center"
+        android:text="@string/matisse_takephoto"
+        android:textSize="18sp"
+        android:background="@color/color_ffffff"
+        android:layout_above="@+id/tv_selectphoto"
+        android:layout_marginBottom="@dimen/y2"/>
+
+</RelativeLayout>

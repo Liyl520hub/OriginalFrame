@@ -1,0 +1,160 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:label">""</item>
+        <item name="android:screenOrientation">portrait</item>
+        // 关闭多点触摸
+        <item name="android:windowEnableSplitTouch">false</item>
+        <item name="android:splitMotionEvents">false</item>
+        <item name="android:windowAnimationStyle">@style/windowAnimationIn</item>
+
+    </style>
+
+    <!--APP启动时没有白屏-->
+    <style name="Theme.AppStartLoadTranslucent" parent="AppTheme">
+        <!--状态栏和toolbar分开-->
+        <!--<item_fund_cancel_list name="android:windowIsTranslucent">true</item_fund_cancel_list>-->
+        <!-- 状态栏和toolbar连在一起-->
+        <!--<item name="android:windowTranslucentStatus">true</item>-->
+
+        <!--解决启动白屏问题，左侧快速启动，通常用于欢迎页-->
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:windowAnimationStyle">@style/windowAnimationIn</item>
+
+    </style>
+    <!--能够滑动回退的Activity使用该Theme,并且可以从底部进入-->
+    <style name="ThemeSwipeBackAndBottomIn" parent="AppTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@style/windowAnimationIn</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="windowAnimationIn" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/anim_translate_in_from_top</item>
+        <item name="android:activityOpenExitAnimation">@anim/anim_translate_out_to_top</item>
+        <item name="android:activityCloseEnterAnimation">@anim/anim_translate_in_from_top</item>
+        <item name="android:activityCloseExitAnimation">@anim/anim_translate_out_to_top</item>
+    </style>
+
+    <style name="CustomDialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="MyDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item><!--边框-->
+        <item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">false</item><!--半透明-->
+        <item name="android:windowNoTitle">true</item><!--无标题-->
+        <item name="android:windowBackground">@android:color/transparent</item><!--背景透明-->
+        <item name="android:backgroundDimEnabled">false</item><!--模糊-->
+
+    </style>
+
+    <style name="MyTabLayoutTheme" parent="Widget.Design.TabLayout">
+        <item name="tabMode">fixed</item>
+        <item name="tabGravity">fill</item>
+        <item name="tabIndicatorColor">@color/colorAccent</item>
+        <item name="tabIndicatorHeight">@dimen/y2</item>
+        <item name="tabSelectedTextColor">@color/colorAccent</item>
+    </style>
+
+
+    <style name="class_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+
+    <style name="Text_12sp_ffffff">
+        <item name="android:textSize">@dimen/textsize_12sp</item>
+        <item name="android:textColor">@color/color_ffffff</item>
+    </style>
+
+
+    <style name="Text_13sp_2b2d2e">
+        <item name="android:textSize">@dimen/textsize_13sp</item>
+        <item name="android:textColor">@color/color_2b2d2e</item>
+    </style>
+
+
+
+    <style name="Text_13sp_ffffff">
+        <item name="android:textSize">@dimen/textsize_13sp</item>
+        <item name="android:textColor">@color/color_ffffff</item>
+    </style>
+
+    <style name="Text_13sp_a3a5a6">
+        <item name="android:textSize">@dimen/textsize_13sp</item>
+        <item name="android:textColor">@color/color_a3a5a6</item>
+    </style>
+
+    <style name="Text_13sp_f5a623">
+        <item name="android:textSize">@dimen/textsize_13sp</item>
+        <item name="android:textColor">@color/color_f5a623</item>
+    </style>
+
+    <style name="Text_16sp_2b2d2e">
+        <item name="android:textSize">@dimen/textsize_16sp</item>
+        <item name="android:textColor">@color/color_2b2d2e</item>
+    </style>
+
+    <style name="Text_16sp_a3a5a6">
+        <item name="android:textSize">@dimen/textsize_16sp</item>
+        <item name="android:textColor">@color/color_a3a5a6</item>
+    </style>
+
+    <style name="Text_16sp_ffffff">
+        <item name="android:textSize">@dimen/textsize_16sp</item>
+        <item name="android:textColor">@color/color_ffffff</item>
+    </style>
+
+
+    <style name="Text_16sp_f5a623">
+        <item name="android:textSize">@dimen/textsize_16sp</item>
+        <item name="android:textColor">@color/color_f5a623</item>
+    </style>
+
+    <style name="Text_18sp_2b2d2e">
+        <item name="android:textSize">@dimen/textsize_18sp</item>
+        <item name="android:textColor">@color/color_2b2d2e</item>
+    </style>
+
+    <style name="Text_20sp_2b2d2e">
+        <item name="android:textSize">@dimen/textsize_20sp</item>
+        <item name="android:textColor">@color/color_2b2d2e</item>
+    </style>
+
+    <style name="Text_22sp_2b2d2e">
+        <item name="android:textSize">@dimen/textsize_22sp</item>
+        <item name="android:textColor">@color/color_2b2d2e</item>
+    </style>
+
+    <style name="Text_34sp_2b2d2e">
+        <item name="android:textSize">@dimen/textsize_34sp</item>
+        <item name="android:textColor">@color/color_2b2d2e</item>
+    </style>
+
+
+    <style name="Theme.FloatActivity" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+</resources>

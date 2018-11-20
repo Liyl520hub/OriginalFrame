@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_ffffff"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="@dimen/x604"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/m_prompt_title_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y40"
+                android:layout_marginLeft="@dimen/x48"
+                android:textColor="@color/color_000000"
+                android:textSize="18sp"/>
+
+            <ImageView
+                android:id="@+id/m_prompt_close_imageview"
+                android:layout_width="@dimen/x80"
+                android:layout_height="@dimen/y80"
+                android:layout_marginLeft="@dimen/x400"
+                android:layout_marginTop="@dimen/y20"
+                android:padding="@dimen/y25"
+                android:src="@drawable/prompt_cancel"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y2"
+            android:layout_marginTop="@dimen/y32"
+            android:background="@color/color_f4f4f4"/>
+
+        <FrameLayout
+            android:id="@+id/m_prompt_frame_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x48"
+            android:layout_marginRight="@dimen/x66"
+            android:layout_marginTop="@dimen/y48">
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/y48"
+            android:id="@+id/m_prompt_cancel_confirm_linearlayout"
+            android:layout_width="@dimen/x530"
+            android:layout_height="@dimen/y76"
+            android:layout_marginBottom="@dimen/y40"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/m_prompt_left_textview"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/y76"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/shape_round_corner_prompt_cancel"
+                android:textSize="16sp"
+                android:textColor="@color/color_2b2d2e" />
+
+
+            <TextView
+                android:id="@+id/m_prompt_right_textview"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/y76"
+                android:layout_marginLeft="@dimen/x28"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/shape_round_corner_prompt_confirm"
+                android:textSize="16sp"
+                android:textColor="@color/color_2b2d2e"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/m_prompt_singer_textview"
+            android:layout_width="@dimen/x530"
+            android:layout_height="@dimen/y80"
+            android:layout_marginBottom="@dimen/y76"
+            android:background="@drawable/shape_round_corner_prompt_confirm"
+            android:layout_marginTop="@dimen/y48"
+            android:textSize="16sp"
+            android:textColor="@color/color_2b2d2e"
+            android:gravity="center"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</RelativeLayout>

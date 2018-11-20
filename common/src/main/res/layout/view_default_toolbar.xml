@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/default_toolbar"
+    style="@style/MyToolbarTheme"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/toolBarHeight"
+    android:background="@color/color_ffc400"
+    android:fitsSystemWindows="false"
+    android:minHeight="@dimen/toolBarHeight"
+    app:contentInsetLeft="0dp"
+    app:contentInsetStart="0dp">
+
+    <!--基类封装的默认Toolbar，不要设置整体背景色，SwipeBackActivity中给toolbar容器设置了背景色，就是toolbar的背景色-->
+    <ImageView
+        android:id="@+id/default_toolbar_left_image"
+        android:layout_width="@dimen/toolBarHeight"
+        android:layout_height="@dimen/toolBarHeight"
+        android:layout_gravity="left"
+        android:padding="14dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/icon_back" />
+
+    <TextView
+        android:id="@+id/default_toolbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="#2b2d2e"
+        android:textSize="16sp"/>
+
+    <!--注：该ImageView未使用，如果使用请重新根据设计图设计尺寸-->
+    <ImageView
+        android:id="@+id/default_toolbar_right_image"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="right|center_vertical"
+        android:layout_marginRight="18dp"
+        android:scaleType="fitXY" />
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_right"
+        android:layout_marginRight="18dp"
+        android:layout_gravity="right|center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</android.support.v7.widget.Toolbar>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!--*********************以下是alert相关********************************-->
+    <declare-styleable name="Alerter">
+        <attr name="alertStyle" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="Alert">
+        <attr name="alertIcon" format="reference"/>
+        <attr name="alertBackgroundColor" format="color"/>
+        <attr name="alertTitle" format="string"/>
+        <attr name="alertText" format="string"/>
+    </declare-styleable>
+    <!--*********************以上是alert相关********************************-->
+
+    <declare-styleable name="PinEntryEditText">
+        <attr name="pinAnimationType" format="enum">
+            <enum name="popIn" value="0" />
+            <enum name="fromBottom" value="1" />
+            <enum name="none" value="-1" />
+        </attr>
+        <attr name="pinCharacterMask" format="string" />
+        <attr name="pinRepeatedHint" format="string" />
+        <attr name="pinLineStroke" format="dimension" />
+        <attr name="pinLineStrokeSelected" format="dimension" />
+        <attr name="pinCharacterSpacing" format="dimension" />
+        <attr name="pinTextBottomPadding" format="dimension" />
+        <attr name="pinLineColors" format="color" />
+        <attr name="pinBackgroundDrawable" format="reference" />
+        <attr name="pinBackgroundIsSquare" format="boolean" />
+    </declare-styleable>
+
+</resources>
