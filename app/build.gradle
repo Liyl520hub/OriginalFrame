@@ -13,7 +13,7 @@ android {
     compileSdkVersion project.VERSION_COMPILE_SDK as int
     buildToolsVersion project.VERSION_BUILD_TOOLS
     defaultConfig {
-        applicationId "com.yjj.coach.kaolakaola"
+        applicationId "com.liyl.xxxx.xxx"
         minSdkVersion project.VERSION_MIN_SDK as int
         targetSdkVersion project.VERSION_TARGET_SDK as int
         versionCode 1

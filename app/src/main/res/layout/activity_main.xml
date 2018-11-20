@@ -22,7 +22,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_weight="1">
 
-            <com.yjj.coach.kaolakaola.view.CustomViewPager
+            <com.liyl.xxxx.xxx.view.CustomViewPager
                 android:id="@+id/activity_main_viewpager"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
